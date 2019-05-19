@@ -93,6 +93,7 @@ type PushResponse struct {
 	Status      string            `json:"status"`
 	Message     string            `json:"message"`
 	Details     map[string]string `json:"details"`
+	ReceiptID   string            `json:"id"`
 }
 
 func (r *PushResponse) isSuccess() bool {
